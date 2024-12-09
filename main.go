@@ -140,7 +140,7 @@ func main() {
 	fmt.Println("Validating balances ...")
 	account_timestamp_previous = 0
 	for {
-		accounts_old, err := client_new.QueryAccounts(QueryFilter{
+		accounts_old, err := client_old.QueryAccounts(QueryFilter{
 			TimestampMin: account_timestamp_previous,
 			Limit:        8190,
 		})
